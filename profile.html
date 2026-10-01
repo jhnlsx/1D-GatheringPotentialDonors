@@ -3,7 +3,7 @@
 
 <head>
     <title>Potential Blood Donor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pstyle.css">
 </head>
 
 <body>
@@ -67,25 +67,38 @@
                 <h3>👥 Personal Information</h3>
 
                 <p>
-                    <label>Full Name</label><br>
-                    <input type="text"
-                           value="Juan Dela Cruz">
+                    <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+                    >
                 </p>
 
 
                 <p>
-                    <label>Age</label><br>
-                    <input type="number"
-                           value="18">
+                    <label for="Age">Age</label>
+            <input
+                type="text"
+                id="age"
+                name="age"
+                placeholder="Enter your Age"
+                required
                 </p>
 
 
                 <p>
                     <label>Sex</label><br>
+            
+
 
                     <select>
-                        <option>Male</option>
+                        <option>Choose you Gender</option>
+                        <option>male</option>
                         <option>Female</option>
+                        
                     </select>
                 </p>
 

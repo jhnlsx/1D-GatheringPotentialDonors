@@ -1,0 +1,314 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 720px;
+
+    background: white;
+
+    padding: 42px 55px 35px;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header h3 {
+    font-size: 21px;
+    color: #bd2630;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+.blood-drop {
+    color: #ff2d75;
+    font-size: 23px;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.header p {
+    font-size: 19px;
+    font-style: italic;
+
+    margin-bottom: 85px;
+}
+
+
+/* =========================================
+   LOGIN CONTENT
+========================================= */
+
+.login-content {
+    width: 100%;
+}
+
+.login-content h1 {
+    font-size: 34px;
+    line-height: 1.2;
+
+    margin-bottom: 28px;
+}
+
+.login-content h1 span {
+    color: #bd2630;
+}
+
+
+/* Description */
+
+.description {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+
+    max-width: 570px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #999;
+    border-radius: 2px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #bd2630;
+
+    box-shadow: 0 0 0 2px rgba(189, 38, 48, 0.08);
+}
+
+.input-group input::placeholder {
+    color: #999;
+}
+
+
+/* =========================================
+   FORM OPTIONS
+========================================= */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0 30px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 14px;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #bd2630;
+}
+
+.forgot {
+    color: #bd2630;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #bd2630;
+    color: white;
+
+    border: none;
+    border-radius: 2px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-btn:hover {
+    background: #9f1f28;
+}
+
+.login-btn:active {
+    transform: scale(0.99);
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.register {
+    text-align: center;
+
+    margin-top: 28px;
+
+    font-size: 15px;
+}
+
+.register a {
+    color: #bd2630;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER / PROCESS
+========================================= */
+
+footer {
+    margin-top: 55px;
+
+    font-size: 16px;
+    font-style: italic;
+
+    line-height: 2;
+}
+
+footer p {
+    margin-bottom: 3px;
+}
+
+footer span {
+    color: #111;
+}
+
+footer b {
+    font-weight: normal;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 20px 12px;
+        align-items: flex-start;
+    }
+
+    .login-card {
+        padding: 30px 25px;
+    }
+
+    .header p {
+        margin-bottom: 55px;
+    }
+
+    .login-content h1 {
+        font-size: 29px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}

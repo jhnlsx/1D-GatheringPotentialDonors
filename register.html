@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Potential Blood Donor</title>
+
+    <link rel="stylesheet" href="rstyle.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <h2>Potential Blood Donor</h2>
+
+        <p>Gathering System</p>
+
+        <h1>Create Account</h1>
+
+        <p class="description">
+            Register your account to become part of our
+            potential blood donor gathering system.
+        </p>
+
+
+        <form action="profile.html" method="get">
+
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="contact">Contact Number</label>
+            <input
+                type="tel"
+                id="contact"
+                name="contact"
+                placeholder="Enter your contact number"
+                required
+            >
+
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                required
+            >
+
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm your password"
+                required
+            >
+
+
+            <label class="terms">
+                <input type="checkbox" required>
+                I agree to the terms and conditions.
+            </label>
+
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p class="login-link">
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+
+
+        <footer>
+            <p>1. Register ──────── 2. Complete Profile</p>
+            <p>3. Verification ──────── 4. Ready</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
