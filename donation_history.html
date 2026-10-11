@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation History | BloodLink</title>
+
+    <link rel="stylesheet" href="donation_history.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">🩸</div>
+                <div>
+                    <h2>Potential Blood</h2>
+                <p>Donor Gathering System</p>
+                </div>
+            </div>
+
+            <p class="menu-label">MAIN MENU</p>
+
+            <nav class="navigation">
+                <a href="ddashboard.html" class="nav-link">Dashboard</a>
+                <a href="register.html" class="nav-link">Donor Registration</a>
+                <a href="#" class="nav-link">Blood Requests</a>
+                <a href="donation_history.html" class="nav-link active">Donation History</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="nav-link">Settings</a>
+                <a href="#" class="nav-link">Log Out</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h2>Donation History</h2>
+                    <p>View and manage your recorded blood donations.</p>
+                </div>
+
+                <div class="admin-profile">
+                    <div class="avatar">AD</div>
+                    <div>
+                        <h4>Administrator</h4>
+                        <p>BloodLink Admin</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome-card">
+                <div>
+                    <span class="welcome-label">DONOR RECORDS</span>
+                    <h1>Donation History Records</h1>
+                    <p>
+                        Keep track of blood donations and help save lives
+                        through organized donor records.
+                    </p>
+                </div>
+
+                <div class="blood-icon">♥</div>
+            </section>
+
+            <!-- Summary Cards -->
+            <section class="summary-cards">
+
+                <div class="summary-card">
+                    <div class="summary-icon red">♥</div>
+                    <p>Total Donations</p>
+                    <h2>128</h2>
+                    <span>All recorded donations</span>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon green">✓</div>
+                    <p>Completed Donations</p>
+                    <h2>96</h2>
+                    <span>Successfully recorded</span>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon orange">◷</div>
+                    <p>Scheduled Donations</p>
+                    <h2>12</h2>
+                    <span>Upcoming appointments</span>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon blue">♙</div>
+                    <p>Registered Donors</p>
+                    <h2>85</h2>
+                    <span>Donors in the system</span>
+                </div>
+
+            </section>
+
+            <!-- History Table -->
+            <section class="history-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Donation Records</h2>
+                        <p>List of recorded donor activities</p>
+                    </div>
+
+                    <a href="#" class="add-button">+ Add Donation</a>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DONATION ID</th>
+                                <th>DONOR NAME</th>
+                                <th>BLOOD TYPE</th>
+                                <th>DONATION DATE</th>
+                                <th>LOCATION</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>DON-001</td>
+                                <td>
+                                    <div class="donor-name">
+                                        <div class="donor-avatar">JD</div>
+                                        <span>Juan Dela Cruz</span>
+                                    </div>
+                                </td>
+                                <td><span class="blood-type">O+</span></td>
+                                <td>Oct 05, 2026</td>
+                                <td>Mamburao Health Center</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td><a href="#" class="view-button">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>DON-002</td>
+                                <td>
+                                    <div class="donor-name">
+                                        <div class="donor-avatar">MS</div>
+                                        <span>Maria Santos</span>
+                                    </div>
+                                </td>
+                                <td><span class="blood-type">A+</span></td>
+                                <td>Oct 07, 2026</td>
+                                <td>Community Blood Center</td>
+                                <td><span class="status scheduled">Scheduled</span></td>
+                                <td><a href="#" class="view-button">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>DON-003</td>
+                                <td>
+                                    <div class="donor-name">
+                                        <div class="donor-avatar">PR</div>
+                                        <span>Pedro Reyes</span>
+                                    </div>
+                                </td>
+                                <td><span class="blood-type">B+</span></td>
+                                <td>Oct 08, 2026</td>
+                                <td>OMSU Medical Center</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td><a href="#" class="view-button">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>DON-004</td>
+                                <td>
+                                    <div class="donor-name">
+                                        <div class="donor-avatar">AC</div>
+                                        <span>Ana Cruz</span>
+                                    </div>
+                                </td>
+                                <td><span class="blood-type">AB+</span></td>
+                                <td>Oct 10, 2026</td>
+                                <td>Mamburao Health Center</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td><a href="#" class="view-button">View</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>DON-005</td>
+                                <td>
+                                    <div class="donor-name">
+                                        <div class="donor-avatar">RL</div>
+                                        <span>Rosa Lopez</span>
+                                    </div>
+                                </td>
+                                <td><span class="blood-type">O-</span></td>
+                                <td>Oct 11, 2026</td>
+                                <td>Community Blood Center</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td><a href="#" class="view-button">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-footer">
+                    <p>Showing 5 sample records</p>
+
+                    <div class="pagination">
+                        <a href="#" class="page-button disabled">Previous</a>
+                        <a href="#" class="page-number active-page">1</a>
+                        <a href="#" class="page-number">2</a>
+                        <a href="#" class="page-number">3</a>
+                        <a href="#" class="page-button">Next</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer class="footer">
+                <p>© 2026 BloodLink | Gathering Potential Blood Donors</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>

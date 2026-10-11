@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard | Blood Donor System</title>
+    <link rel="stylesheet" href="ddashboard.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo">🩸</div>
+            <div>
+                <h2>Potential Blood</h2>
+                <p>Donor Gathering System</p>
+            </div>
+        </div>
+
+        <p class="menu-label">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="dashboard.html" class="nav-link active">
+                <span>▦</span> Dashboard
+            </a>
+            <a href="profile.html" class="nav-link">
+                <span>👤</span> My Profile
+            </a>
+            <a href="donation_history.html" class="nav-link">
+                <span>🗓</span> Donation History
+            </a>
+            <a href="requests.html" class="nav-link">
+                <span>🩸</span> Blood Requests
+            </a>
+            <a href="notifications.html" class="nav-link">
+                <span>🔔</span> Notifications
+                <span class="notification-count">3</span>
+            </a>
+        </nav>
+
+        <p class="menu-label settings-label">PREFERENCES</p>
+
+        <nav class="navigation">
+            <a href="settings.html" class="nav-link">
+                <span>⚙</span> Settings
+            </a>
+            <a href="login.html" class="nav-link logout">
+                <span>↪</span> Logout
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="footer-icon">❤️</div>
+            <h3>Be a lifesaver!</h3>
+            <p>Your willingness to donate can make a difference.</p>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Home / Dashboard</p>
+                <h1>Donor Dashboard</h1>
+            </div>
+
+            <div class="topbar-right">
+                <button class="icon-button" id="notificationBtn"
+                    aria-label="View notifications" title="Notifications">
+                    ♧
+                    <span class="red-dot"></span>
+                </button>
+
+                <div class="user-profile">
+                    <div class="avatar">D</div>
+                    <div class="user-details">
+                        <strong id="headerName">Donor</strong>
+                        <span>Registered Donor</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- WELCOME -->
+        <section class="welcome-banner">
+            <div class="welcome-text">
+                <span class="welcome-tag">DONOR COMMUNITY</span>
+                <h2>Welcome back, <span id="welcomeName">Donor</span>!</h2>
+                <p>
+                    Thank you for being part of our community.
+                    Manage your profile and stay updated on donation activities.
+                </p>
+                <a href="profile.html" class="welcome-button">
+                    Complete Your Profile →
+                </a>
+            </div>
+
+            <div class="welcome-illustration">🩸</div>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon purple">👤</div>
+                    <span class="stat-label">PROFILE</span>
+                </div>
+                <h2>75%</h2>
+                <p>Profile Completion</p>
+                <div class="mini-progress">
+                    <span style="width: 75%"></span>
+                </div>
+                <a href="profile.html">Complete profile →</a>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon red">🩸</div>
+                    <span class="stat-label">RECORDS</span>
+                </div>
+                <h2 id="donationCount">0</h2>
+                <p>Donation Records</p>
+                <div class="stat-note">Recorded donations</div>
+                <a href="history.html">View history →</a>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon orange">📅</div>
+                    <span class="stat-label">EVENTS</span>
+                </div>
+                <h2>1</h2>
+                <p>Upcoming Drives</p>
+                <div class="stat-note">Check event details</div>
+                <a href="drives.html">View activities →</a>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon blue">🔔</div>
+                    <span class="stat-label">UPDATES</span>
+                </div>
+                <h2>3</h2>
+                <p>Notifications</p>
+                <div class="stat-note">Stay informed</div>
+                <a href="notifications.html">View notifications →</a>
+            </article>
+
+        </section>
+
+        <!-- MIDDLE CONTENT -->
+        <section class="middle-grid">
+
+            <article class="content-card readiness-card">
+                <div class="card-heading">
+                    <div>
+                        <h3>Donor Profile Status</h3>
+                        <p>Keep your information accurate and updated.</p>
+                    </div>
+                    <span class="heading-emoji">❤️</span>
+                </div>
+
+                <div class="readiness-body">
+                    <div class="readiness-icon">✓</div>
+                    <div>
+                        <h4>Complete your donor information</h4>
+                        <p>
+                            Make sure your contact details and emergency
+                            contact are filled in before verification.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="readiness-progress">
+                    <div class="progress-label">
+                        <span>Profile completion</span>
+                        <strong>75%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width: 75%"></span>
+                    </div>
+                </div>
+
+                <a href="profile.html" class="outline-button">
+                    Update Profile
+                </a>
+            </article>
+
+            <article class="content-card quick-card">
+                <div class="card-heading">
+                    <div>
+                        <h3>Quick Actions</h3>
+                        <p>Access important donor features.</p>
+                    </div>
+                </div>
+
+                <a href="profile.html" class="action-link">
+                    <span class="action-icon purple">👤</span>
+                    <span>
+                        <strong>Update Profile</strong>
+                        <small>Manage your information</small>
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="drives.html" class="action-link">
+                    <span class="action-icon red">🩸</span>
+                    <span>
+                        <strong>Find Blood Drives</strong>
+                        <small>Explore donation activities</small>
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="requests.html" class="action-link">
+                    <span class="action-icon orange">📋</span>
+                    <span>
+                        <strong>Blood Requests</strong>
+                        <small>View community requests</small>
+                    </span>
+                    <span class="arrow">→</span>
+                </a>
+            </article>
+
+        </section>
+
+        <!-- BOTTOM CONTENT -->
+        <section class="bottom-grid">
+
+            <article class="content-card activity-card">
+                <div class="card-heading">
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>Your latest donor activities.</p>
+                    </div>
+                    <span class="view-label">ACTIVITY LOG</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon purple">👤</div>
+                    <div class="activity-info">
+                        <strong>Donor account registered</strong>
+                        <p>Your registration was submitted.</p>
+                    </div>
+                    <span class="activity-status pending">Submitted</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon red">📝</div>
+                    <div class="activity-info">
+                        <strong>Profile completion</strong>
+                        <p>Review your personal information.</p>
+                    </div>
+                    <span class="activity-status pending">In progress</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon blue">🔍</div>
+                    <div class="activity-info">
+                        <strong>Donor verification</strong>
+                        <p>Verification status will appear here.</p>
+                    </div>
+                    <span class="activity-status waiting">Pending</span>
+                </div>
+            </article>
+
+            <aside class="right-column">
+
+                <article class="content-card tips-card">
+                    <div class="card-heading">
+                        <h3>Blood Donation Tips</h3>
+                        <span>💡</span>
+                    </div>
+
+                    <div class="tip-item">
+                        <span>💧</span>
+                        <p>Drink enough water before donation.</p>
+                    </div>
+
+                    <div class="tip-item">
+                        <span>🍎</span>
+                        <p>Eat regular, nutritious meals.</p>
+                    </div>
+
+                    <div class="tip-item">
+                        <span>😴</span>
+                        <p>Get adequate rest before a donation.</p>
+                    </div>
+
+                    <p class="tip-note">
+                        Follow the instructions of qualified donation staff.
+                    </p>
+                </article>
+
+                <article class="drive-card">
+                    <div class="drive-symbol">📅</div>
+                    <p class="drive-label">COMMUNITY EVENT</p>
+                    <h3>Next Blood Donation Drive</h3>
+                    <p id="driveDate">
+                        Event date and venue will be announced by the administrator.
+                    </p>
+                    <a href="drives.html">Explore events →</a>
+                </article>
+
+            </aside>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 Potential Blood Donor Gathering System</p>
+            <p>Connecting communities. Supporting lifesaving donations.</p>
+        </footer>
+
+    </main>
+</div>
+
+<script>
+    // Read a display name if it was saved by the registration page.
+    // This is a demo only; use authenticated server data in production.
+    const savedName = localStorage.getItem("donorName");
+
+    if (savedName) {
+        document.getElementById("headerName").textContent = savedName;
+        document.getElementById("welcomeName").textContent = savedName;
+    }
+
+    // This dashboard uses sample statistics until connected to a database.
+    document.getElementById("notificationBtn").addEventListener("click", () => {
+        window.location.href = "notifications.html";
+    });
+</script>
+
+</body>
+</html>
