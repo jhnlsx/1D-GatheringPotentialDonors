@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Requests | BloodLink</title>
+    <link rel="stylesheet" href="blood_requests.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo">🩸</div>
+            <div>
+                <h2>Potential Blood</h2>
+                <p>Donor Gathering System</p>
+            </div>
+        </div>
+
+        <p class="menu-label">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="ddashboard.html"><span>▦</span> Dashboard</a>
+            <a href="register.html"><span>♙</span> Donor Registration</a>
+            <a href="blood_requests.html" class="active"><span>🩸</span> Blood Requests</a>
+            <a href="donation_history.html"><span>▤</span> Donation History</a>
+            <a href="profile.html"><span>♟</span> My Profile</a>
+            <a href="settings.html"><span>⚙</span> Settings</a>
+            <a href="login.html"><span>↪</span> Log Out</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="avatar">AD</div>
+            <div>
+                <strong>Administrator</strong>
+                <small>BloodLink Admin</small>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Dashboard / Blood Requests</p>
+                <h1>Blood Requests</h1>
+                <p class="subtitle">
+                    Manage blood requests and help connect patients with donors.
+                </p>
+            </div>
+
+            <div class="admin-profile">
+                <div class="avatar">AD</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <small>BloodLink Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="summary-grid">
+            <div class="summary-card">
+                <div class="summary-icon red">🩸</div>
+                <div>
+                    <p>Total Requests</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon orange">◷</div>
+                <div>
+                    <p>Pending</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon green">✓</div>
+                <div>
+                    <p>Fulfilled</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-heading">
+                <div>
+                    <h2>Create Blood Request</h2>
+                    <p>Enter the patient's information below.</p>
+                </div>
+                <span class="heading-icon">＋</span>
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="patientName">Patient Name *</label>
+                        <input type="text" id="patientName"
+                            name="patientName"
+                            placeholder="Enter patient name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bloodType">Blood Type *</label>
+                        <select id="bloodType" name="bloodType" required>
+                            <option value="">Select blood type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="units">Units Needed *</label>
+                        <input type="number" id="units" name="units"
+                            min="1" placeholder="Enter units needed" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level *</label>
+                        <select id="urgency" name="urgency" required>
+                            <option value="">Select urgency</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Emergency">Emergency</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="hospital">Hospital / Medical Facility *</label>
+                        <input type="text" id="hospital" name="hospital"
+                            placeholder="Enter hospital name and location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Contact Number *</label>
+                        <input type="tel" id="contact" name="contact"
+                            placeholder="Enter contact number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="neededDate">Date Needed *</label>
+                        <input type="date" id="neededDate"
+                            name="neededDate" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="notes">Additional Information</label>
+                        <textarea id="notes" name="notes" rows="3"
+                            placeholder="Enter additional details (optional)"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn-secondary">Clear Form</button>
+                    <button type="submit" class="btn-primary">＋ Submit Request</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel records-panel">
+            <div class="panel-heading records-heading">
+                <div>
+                    <h2>Blood Request Records</h2>
+                    <p>View blood request records.</p>
+                </div>
+
+                <input type="search" class="search-input"
+                    placeholder="Search requests...">
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Blood Type</th>
+                            <th>Units</th>
+                            <th>Urgency</th>
+                            <th>Date Needed</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="empty-state">
+                                No blood requests available.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 BloodLink — Donor Gathering System
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

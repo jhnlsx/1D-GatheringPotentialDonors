@@ -7,7 +7,7 @@ if (menu) {
 }
 }
 
-function toast(message) {
+function toast(message){
     let t =
 document.createElement("toast>");
 if (!t) {
@@ -17,4 +17,5 @@ t.id = "toast";
 t.className = "toast";
 
 document.body.appendChild(t);      
+}
 }
